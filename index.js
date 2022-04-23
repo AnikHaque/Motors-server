@@ -67,6 +67,21 @@ app.get('/cars/:id', async(req,res)=>{
   res.json(hotel);
 
 })
+
+app.get('/cars/:id', async(req,res)=>{
+  const id = req.params.id;
+  const payment = req.body;
+  const filter = {_id:ObjectId(id)};
+  const updateDoc = {
+    $set:{
+      payment:payment
+    }
+  };
+
+  const result = await carscollection.findOne(updateDoc);
+  res.json(result);
+
+})
 // // get api for all reviews 
 app.get('/reviews', async(req,res)=>{
   const cursor = reviewCollection.find({});
