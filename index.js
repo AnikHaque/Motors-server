@@ -38,7 +38,6 @@ app.get('/special', async(req, res) => {
     res.send(hotels);
 })
    
-
 // GET API FOR my BOOKED ROOMS & all booked rooms
 app.get('/booking', async(req, res) => {
   let query = {};
