@@ -50,8 +50,6 @@ if(email){
     res.send(room);
 })
 
-
-
 // GET API FOR SHOWING INDIVIDUAL ROOM DETAILS 
 app.get('/cars/:id', async(req,res)=>{
   const id = req.params.id;
