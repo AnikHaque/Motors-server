@@ -121,7 +121,7 @@ app.post('/special', async(req, res) => {
 //   console.log('added hotel', result)
 //   res.json(result);
         
-// })
+
 //   // POST API TO ADD BOOKING OF ANY ROOM 
 app.post('/booking', async(req, res) => {
   const newroom = req.body; 
