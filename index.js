@@ -21,7 +21,6 @@ async function run() {
        const carscollection = database.collection("cars");
        const specialcollection = database.collection("special");
         const bookingcollection = database.collection("booking");
- 
          const userscollection = database.collection("users");
          const reviewCollection = database.collection("reviews");
    
