@@ -83,8 +83,7 @@ app.post('/reviews', async(req,res)=>{
   const review = req.body;
   console.log('hit the post api',review);
   const result = await reviewCollection.insertOne(review);
-   res.json(result)
-
+   res.json(result);
 });
 
 //   POST API TO ADD clock 
