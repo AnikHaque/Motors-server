@@ -77,7 +77,7 @@ app.get('/cars/:id', async(req,res)=>{
   res.json(result);
 
 })
-// // get api for all reviews 
+ // get api for all reviews 
 app.get('/reviews', async(req,res)=>{
   const cursor = reviewCollection.find({});
   const reviews = await cursor.toArray();
