@@ -87,7 +87,7 @@ app.post('/reviews', async(req,res)=>{
 
 });
 
-// //   POST API TO ADD clock 
+//   POST API TO ADD clock 
 app.post('/cars', async(req, res) => {
     const newhotel = req.body; 
     const result = await carscollection.insertOne(newhotel);
