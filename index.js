@@ -82,7 +82,6 @@ app.get('/reviews', async(req,res)=>{
 app.post('/reviews', async(req,res)=>{
   const review = req.body;
   console.log('hit the post api',review);
-
   const result = await reviewCollection.insertOne(review);
    res.json(result)
 
