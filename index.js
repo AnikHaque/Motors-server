@@ -138,7 +138,7 @@ app.post('/reviews', async(req,res)=>{
 
 }); 
       
-// // get users by their email address and make an user admin 
+ // get users by their email address and make an user admin 
 app.get('/users/:email', async(req,res)=>{
   const email = req.params.email;
   const query = {email:email};
