@@ -69,7 +69,6 @@ app.get('/cars/:id', async(req,res)=>{
   };
   const result = await carscollection.findOne(updateDoc);
   res.json(result);
-
 })
  // get api for all reviews 
 app.get('/reviews', async(req,res)=>{
