@@ -67,7 +67,6 @@ app.get('/cars/:id', async(req,res)=>{
       payment:payment
     }
   };
-
   const result = await carscollection.findOne(updateDoc);
   res.json(result);
 
