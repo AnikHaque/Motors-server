@@ -56,7 +56,6 @@ app.get('/cars/:id', async(req,res)=>{
   const query = {_id:ObjectId(id)};
   const hotel = await carscollection.findOne(query);
   res.json(hotel);
-
 })
 
 app.get('/cars/:id', async(req,res)=>{
