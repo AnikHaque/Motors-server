@@ -121,7 +121,7 @@ app.post('/booking', async(req, res) => {
   res.json(result);
         
 }) 
-//   // POST API FOR USERS 
+  // POST API FOR USERS 
 app.post('/users', async(req, res)=>{
    const user = req.body;
   const result = await userscollection.insertOne(user);
