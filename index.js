@@ -117,7 +117,7 @@ app.post('/special', async(req, res) => {
 // app.post('/reserve', async(req, res) => {
 //   const newhotel = req.body; 
 //   const result = await reservecollection.insertOne(newhotel);
-//   console.log('hitting the post',req.body);
+
 
 
         
