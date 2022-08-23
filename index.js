@@ -160,7 +160,7 @@ app.put('/users', async (req, res)=>{
    res.json(result);
  })
 
-// // make an user admin 
+ // make an user admin 
 app.put('/users/admin', async (req, res)=>{
   const user = req.body;
   console.log('put', user);
