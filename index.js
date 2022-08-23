@@ -31,7 +31,7 @@ app.get('/cars', async(req, res) => {
     const hotels = await cursor.toArray();
     res.send(hotels);
 })
-            // GET API FOR SHOWING ALL reservation
+           
       // GET API FOR SHOWING ALL specials
 app.get('/special', async(req, res) => {
     const cursor = specialcollection.find({});
