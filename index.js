@@ -119,7 +119,7 @@ app.post('/special', async(req, res) => {
 //   const result = await reservecollection.insertOne(newhotel);
 //   console.log('hitting the post',req.body);
 //   console.log('added hotel', result)
-//   res.json(result);
+
         
 
 //   // POST API TO ADD BOOKING OF ANY ROOM 
